@@ -1,0 +1,95 @@
+{
+  "static":{
+    "header": {
+      "slogan": "フルスタック Web 開発者ポートフォリオ"
+    }
+  },
+  "home":
+    {
+      "slogan":"<span>アーチスト</span>・ウエーブデブのポートフォリオへようこそ!",
+      "diapo":
+        [
+          {"src": "img/home/carousel/fullstack.jpg", "class": "carousel-img1", "alt": "フルスタック Web 開発者", "h3": "優れた Web 開発者は、多くの Web 技術者を管理できます。", "fig": "フルスタック Web 開発者とは何ですか?", "fig_": "Web テクノロジーは独学で学びましたが、アカデミー (EMWEB、OpenClassrooms など) を通じても学びました。"},
+          {"src": "img/home/carousel/sem.png", "class": "carousel-img2", "alt": "検索エンジンマーケティング", "h3": "Web 開発者の活動レベルに関係なく、マーケティングは不可欠です。", "fig": "Web マーケティングとは実際には何を意味するのでしょうか。", "fig_": "私はずっと前に、インターネットに関連する多くのマーケティングの概念を始めました。" },
+          {"src": "img/home/carousel/google.png", "class": "carousel-img3", "alt": "グーグルテクノロジー", "h3": "Google はインターネットでのマーケティングだけでなく不可欠です", "fig": "認証、何の目的で？", "fig_": "...しかし、ウェブ開発でも。ええ、Google は私の親友です。あなたも同じだと思います。 2018年から毎年Google認定資格を取得しています。"},
+          {"src": "img/home/carousel/freelance.jpg", "class": "carousel-img3", "alt": "フリーランスになる", "h3": "Web開発などでフリーランスになる..", "fig": "フリーランスって言った？ (いいえ、私はそれを言いました:p)", "fig_": "もちろん、私はいつでもより多くのスキルを集めることができる良い仕事を探しています.同時に、インターネットを介して世界中に Web 開発のサービスを提供する個人的な活動を展開することを目指しています。"}
+        ],
+      "article":
+        {
+          "img": {"src": "img/home/mwa.jpg", "alt": "Cyrille ACHI ウェブ開発者"},
+          "title": "こんにちは！",
+          "p": [
+            "私の名前はCyrille ACHIです。私は現在33歳で、今日あなたに自己紹介できることをうれしく思います!すぐに会えますように！",
+            "その間、<Link href='/about'>私について</Link>詳しくお知らせください。目的が何であれ、<a href='/contact'>私に連絡</a>してください。 <a href='/skills'>フルスタック ウェブ デベロッパー</a>として、ウェブ開発で私ができることを一目で確認できます。",
+            "もちろん、このポートフォリオの下部にあるリンクを使用して、ソーシャル ネットワークで私を訪問してください。"
+          ]
+        }
+    },
+    "footer": {
+      "blocks": [
+        {
+          "h3": "SNSで私を見つけてください",
+          "items": [
+            {"href": "https://www.facebook.com/achi.agnissan", "title": "自分のフェイスブックアカウント", "texte": "Facebook: Achi"},
+            {"href": "https://github.com/webdev-archist", "title": "自分の github アカウント", "texte": "Github: achicyr"},
+            {"href": "https://www.youtube.com/channel/UC_EV9aFhwEz0F1E68oFQQGA", "title": "ユーチューブチャンネル", "texte": "Youtube: mentor archist"}
+          ]
+        },
+        {
+          "h3": "私が作ったいくつかのウェブサイトを見つける",
+          "items": [
+            {"href": "https://2mains-marketing.com/", "title": "ワードプレスで作った", "texte": "代理店マーケティング"},
+            {"href": "https://www.saintfrancoissaintpaul.fr/", "title": "ワードプレスで作った", "texte": "エクス.アン.プロヴァンス(フランス)の教会のブログ"},
+            {"href": "http://puissance-divine.ci/", "title": "手作り", "texte": "キリスト教書店の電子商取引と祈祷所の予約"},
+            {"href": "https://www.calisson.com/fr/", "title": "プレスタショップで作った", "texte": "高級ケーキ・スイーツの電子商取引"}
+          ]
+        },
+        {
+          "h3": "必要とするか私についての有用なリンクを見つけてください",
+          "items": [
+            {"texte": "履歴書", "title": "私の履歴書", "href": "https://drive.google.com/file/d/12yRZOE4QGC_yEySnyOOvyO8_nyakMiif/view?usp=sharing"}
+          ]
+        }
+      ]
+    },
+    "contact":
+    {
+      "showContacts":
+      [
+        {"item": "email", "src": "email.png", "alt": "email archist webdevelopper", "data": "hi.cyril@gmail.com", "href": "mailto:hi.cyril@gmail.com"},
+        {"item": "phone", "src": "phone.png", "alt": "call archist webdevelopper", "data": "00818063868629", "href": "tel:00818063868629"},
+        {"item": "map", "src": "map.png", "alt": "会える場所をローカライズする archist webdevelopper", "data": "MV4M+GF Edogawa, Tokyo", "href": ""},
+        {"item": "rs", "src": "socialnetworks.png", "alt": "アーキスト webdevelopper のインターネットでの活動を参照してください", "data": {"フェイスブック": "https://www.facebook.com/achi.agnissan", "ギットハブ": "https://github.com/achicyr", "ツイッター": "https://twitter.com/AchCyr"}}
+      ],
+      "form": [
+        {"_":true,"content":"電子メールアドレス", "placeholder": "name@example.com", "type":"email"},
+        {"_":true,"content":"姓と名", "placeholder": "山本・由紀"},
+        {"_":false,"content":"電話番号（国番号付き）", "placeholder": "+81 81 6902 0020", "type":"tel"},
+        {"_":true,"content":"お問い合わせの目的", "placeholder": "会いたいです"},
+        {"_":true,"content":"内容", "placeholder": "会いたい理由は・・・", "type":"textarea"}
+      ]
+    },
+    "about":
+    {
+      "intro":  {"h2": "私たちは、子供時代の物語のおかげで、私たちが何であるかになる.. 誰かを知ることは、彼の子供時代を知ることです.", "src": "", "alt": "Archist webdev at 10year old", "p": "私は西アフリカのコートジボワールで生まれました。私の父はコートジボワール人で、私の母はフランス人で、二人ともキリスト教徒で日常生活を送っています。<br>私には 4 人の兄弟と姉妹がいますが、今は妹だけがフランスに住んでおり、他のすべてはコートジボワールに住んでいます。<br>私はインターナショナル (<a href=''>メルモズ</a>) とフランス (<a href=''>ブレーズパスカル</a>) の学校に通いました。<br/>幸せな子供時代でした。コートジボワールが恋しいです。圧倒的な貧困があっても、私の家族や古くからの良き友人がいまだにそこに住んでいる。ピカルディのオワーズにある <a href=''>Pierre d'Ailly</a> 高校の科学者ストリーム 2 年生のフランス。小さな寒い田舎町であったとしても、私はこの小さな場所が本当に本当に好きでした:)私はとても良い友達を作りました。これは確かに、悪い出来事が良い機会をもたらすことを意味します ;)", "button": "私の子供時代の短編小説"},
+      "universitaire": {"id": 1,"src": "", "alt": "", "h3": "教育を受けた人の魂の第二部：大学への道", "p": "私の大学進路は一方通行ではなく、行ったり来たりです。より本質的なことは、私が自分の人生で本当にやりたいことをついに見つけたということですよね?!", "items": [
+        {"href": "http://unice.fr/iut/contenus-riches/plaquettes-dut/dut-r-t", "src":"r&t.png", "h4": "ネットワークと通信", "p": "R&T 部門では、あらゆる種類のデータの送信に適用される IT 分野で採用されるネティシャン * をトレーニングします。彼らは、コンピュータ ネットワークの管理、保守、セキュリティ、および進化の専門家です。", "_": ["学士号」、「工科大学", "UFR Nice-Sophia-antipolis, ニース, フランス", "一年間"]}  ,
+        {"href": "http://unice.fr/faculte-des-sciences/contenus-riches/documents-telechargeables/page-daccueil/licence-mass-2018/at_download/file", "src":"mass.png", "h4": "社会科学に適用される数学", "p": "このライセンスのコースは、学生が統計学部 (ISUP)、グランゼコール (ENSAE、ENSAI、...)、エンジニアリング スクール、ビジネス スクール、金融工学治安判事に入学するための準備をします。このコースの保有者は、特に次の UNS マスターを選択できます。1) 経済的専門知識。 2) 数理工学。", "_": ["学士号", "ヴァルローズ大学", "UFR Nice-Sophia-antipolis, ニース, フランス"]},
+        {"href": "http://lp-imash.unice.fr/index.php", "src":"imapp.png", "h4": "人間科学に適用されるマルチメディアコンピューティング", "p": "IMAPP (Professional License) は、デュアル スキルを持つ技術者を育成することを目的としています。最初の能力は、Web サイトの開発に適用される、話題の技術能力であるマルチメディア コンピューティングによって 1 年で完了します。教育学は、ウェブサイト開発技術の習得に焦点を当てており、現実的な「具体的な」プロジェクトと習得したスキルの体系的な専門化を通じてすぐに実践に移されます。", "_": ["学士号", "サン・ジャン・ダンジェリー大学", "UFR Nice-Sophia-antipolis, ニース, フランス"]},
+        {"href": "https://www.esecad.com/formation-web/integrateur-developpeur/metier/", "src":"emweb.png", "h4": "インターネット形成(EMWEB)", "p": "将来の卒業生は、アクセシビリティ、人間工学、および標準への準拠に関して、Web 環境の制約に準拠するレスポンシブ Web サイトを作成できるようになります。", "_": ["'学士号'", "オンラインパス"]},
+        {"href": "https://openclassrooms.com/fr/paths/104-full-stack-developer#path_start", "src":"oc.png", "h4": "インターネット形成（OpenClassrooms）", "p": "ここ OpenClassrooms では、最も需要の高い仕事に必要な主要なスキルを特定し、それらの分野で生徒を訓練するためのコースと卒業証書を開発しています。そのため、専任のメンターの助けを借りて完全にオンラインで完了することができる、Web 開発のこの 1 年間の学士レベルのディプロマを作成しました。", "_": ["'学士号'", "オンラインパス"]}
+      ]},
+      "webdev": {"id": 2,"src": "", "alt": "", "h3": "最後に、Web コンピューティングが私を繁栄させてくれる唯一のものの 1 つであることをよく理解しました。", "items": [
+        {"h4": "大学での私の最初のステップ", "p": "During a year-end project, I first knew IT development throught JavaJ2E by constructing a simple application recieving input datas and outputing a result. It was magic, so that led me leaving statistic studying to join web computing."}  ,
+        {"h4": "大学での Web 開発の最初の年", "p": "As every beginner in computing, I felt a large perspective of possibilities opening to me while the first year of computer learning. After university internship, I did not succeed to find a job. So I just continued learning by my own and constructing applications I would have like it exist."}  ,
+        {"h4": "それから私はオンラインコースで呪いを完成させました", "p": "While finding a job was quite difficult in distant locations I reside and responsabilities I had with my family, I started online cursus that permit me finding easily traineeships and alternating training at <a href='https://www.esecad.com/formation-web'>emweb</a> and <a href='https://openclassrooms.com/'>openclassrooms</a>"}  ,
+        {"h4": "OpenClassroomsで ", "p": "エクス アン プロヴァンスにある <a href='https://mindfruits.biz'>Mindfruits</a> というマーケティング会社で交互にトレーニングを受けていました。そこでは、私が学びたいと思っていた Google テクノロジーを簡単に学ぶことができました。数年前。私は 2 年間従事していました。<br/>その後、すべての活動で需要の高い能力を利用して仕事を見つけるか、自分の活動を行って作成することができました。"}  ,
+        {"h4": "未来は素晴らしく見えますが、それでも未来のままで、不確かで、つかみにくく、落とし穴が散らばっています", "p": "テクノロジーの聖地、日本に行きたいです。また、独自の活動を構築したいと考えています。しかし、もう 1 つの素晴らしいことは、コンピューティング スキルを進化させ続けることができる仕事を見つけることです。だから私は未来が提供しなければならないことに心を開いています！"}
+      ]},
+      "hobbies": {"id": 3,"src": "", "alt": "", "h3": "コンピューティングはさておき、私の趣味は..", "items": [
+        {"class":"japan", "h4": "日本語と日本文化", "p": "私は2015年に挑戦として日本語を学び始めました.日本の文化は私を魅了します。ぜひ訪れてみたいですし、数年は住んでみたいと思っています。"}  ,
+        {"class":"music", "h4": "音楽", "p": "音楽理論を学び始めたのは遅く、音楽についての知識はあまりありませんが、音楽の一般的な文化をますます拡大することを目指しています。ギターとピアノを少し弾き、サルサなどのラテン音楽を踊り、いつか作曲できるようになることを目指しています。"}  ,
+        {"class":"art", "h4": "映画と芸術", "p": "I like sience fiction, movies about technology and social criticism. I like painting and photography, I do practice sometimes. Also, I like visit museum sometimes."}
+      ]}
+    }
+}

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booki</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        *{box-sizing: border-box;}
+        :root{
+            --gray:#f2f2f2;
+            --blue:#DEEBFF;
+            --blue2:#0065fc;
+        }
+        body{margin:0;font-family: 'Raleway', sans-serif;}
+        body>*:not(footer){margin:0 40px;}
+        ul,menu{list-style: none;margin:0;padding:0;}
+        nav>form>fieldset:first-of-type:before,
+        nav>form>fieldset:first-of-type>label:after,
+        nav>form>fieldset:last-of-type>label:before,
+        nav>p:last-of-type::before,
+        main>section>figure div>i:before,
+        main>section>h2>i{
+            font-family:"Font Awesome 6 Free";
+            font-weight:900;
+            font-style: normal;
+        }
+        
+
+        
+        header{display: flex;align-items: center;justify-content: space-between;height:100px;}
+        header>img{height:60px;}
+        header>menu{display: flex;height:100%;}
+        header>menu a{text-decoration:none;text-align: center;
+            color:gray;border-top:solid white;display: block;padding:1em;
+            height:100%;display:flex;align-items: center;
+        }
+        header>menu a:hover{color:var(--blue2);border-color:var(--blue2);}
+
+
+        nav{}
+        nav>h1{}
+        nav>p{}
+        nav>form{}
+        nav>form>fieldset{border:none;padding:10px 0;margin:0;}
+        nav>form>fieldset>input{}
+        nav>form>fieldset:first-of-type{display: flex;height:70px;}
+        nav>form>fieldset:first-of-type>input{padding-left:10px;font-weight:900;border:1px solid var(--gray);border-left:none;border-right:none;}
+        nav>form>fieldset:first-of-type>input::placeholder{color:black;}
+        nav>form>fieldset:first-of-type>label>span,
+        body>nav>form>fieldset:first-of-type>label:after{background:var(--blue2);color:white;border-radius:0 20px 20px 0;height:100%;padding:0 20px;display: flex;align-items: center;font-weight:700;}
+        body>nav>form>fieldset:first-of-type>label:after{display: none;content:"\f002";}
+        nav>form>fieldset:first-of-type:before{
+            border-radius:20px 0 0 20px;
+            content:"\f3c5";
+            padding:0 15px;
+            background:var(--gray);
+            display: flex;
+            align-items: center;
+        }
+        nav>form>fieldset:first-of-type>label>span{}
+        nav>form>fieldset:last-of-type{
+            display: flex;
+            flex-flow: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+        nav>form>fieldset:last-of-type>label>input{
+            display:none;
+        }
+        nav>form>fieldset:last-of-type>label:first-of-type{
+            font-weight: 700;
+        }
+        nav>form>fieldset:last-of-type>label:not(:first-of-type){
+            border:2px solid #ececec;
+            display: flex;
+            align-items:center;
+            border-radius:2em;
+            gap:1em;
+            padding-right: 15px;
+            font-weight:700;
+        }
+        nav>form>fieldset:last-of-type>label:before{
+            color:#1568fc;
+            padding:15px;
+            border-radius:2em;
+            background:#dfecff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        nav>form>fieldset:last-of-type>label:nth-of-type(2):before{content:"\f0d6"}
+        nav>form>fieldset:last-of-type>label:nth-of-type(3):before{content:"\f183"}
+        nav>form>fieldset:last-of-type>label:nth-of-type(4):before{content:"\f004"}
+        nav>form>fieldset:last-of-type>label:nth-of-type(5):before{content:"\f6d3"}
+        nav>p:last-of-type{font-weight:500;display: flex;align-items: center;}
+        nav>p:last-of-type::before{
+            width:10px;height:10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#1568fc;
+            content:"\f129";
+            border-radius:100px;
+            border:solid var(--gray);
+            padding:10px;
+            margin-right:10px;
+        }
+        nav>p{}
+
+
+
+        main{
+            display: flex;
+            justify-content: space-between;
+            gap:60px 20px;
+            flex-wrap: wrap;
+        }
+        main>section{
+            background:var(--gray);
+            display: flex;
+            flex-flow: wrap;
+            gap:5%;
+            border-radius: 20px;
+            padding:40px;
+        }
+        main>section>h2{margin:0;}
+        main>section>h2>i:before{float:right;margin:0;content:"\f201"}
+        main>section>figure{
+            margin:0;
+            background:white;
+            padding:3px;
+            border-radius: 20px;
+            box-shadow:5px 5px 10px 10px var(--gray);
+        }
+        main>section img{
+            object-fit: cover;
+            width:100%;
+            height:90%;
+        }
+        main>section>figure>*:not(img),main>section>figure>img+div>*{margin:auto 10px;font-size:16px;}
+        main>section>figure>p{margin:5px 10px;}
+        main>section>figure div>i:before{
+            content:"\f005";
+            color:var(--blue2);
+        }
+        main>section>figure div>i.void:before{color:var(--gray);}
+        main>section:first-of-type{width:62%;}
+        main>section:first-of-type>h2{width:100%;}
+        main>section:first-of-type>figure{width:30%;}
+        main>section:first-of-type>figure>img{height:100px;width:100%;border-radius: 20px 20px 0 0;}
+        main>section:first-of-type>figure>h3{}
+        main>section:first-of-type>figure>p{}
+        main>section:first-of-type>figure>div{}
+        main>section:first-of-type>p{font-weight: 900;font-size:20px;}
+
+
+        main>section:nth-of-type(2){width:calc(38% - 40px);flex-flow:column;gap:30px;}
+        main>section:nth-of-type(2)>h2{}
+        main>section:nth-of-type(2)>h2>i{}
+        main>section:nth-of-type(2)>figure{width:100%;display: flex;}
+        main>section:nth-of-type(2)>figure>img{height:135px;width:40%;margin-right: 10px;border-radius: 20px 0 0 20px;}
+        main>section:nth-of-type(2)>figure>div{margin:0;}
+        main>section:nth-of-type(2)>figure>div>*:not(div){height:20%;}
+        main>section:nth-of-type(2)>figure>div>h3{margin-top:10px;}
+        main>section:nth-of-type(2)>figure>div>p{}
+        main>section:nth-of-type(2)>figure>div>div{display: flex;height:40%;}
+        main>section:nth-of-type(2)>figure>div>div>i{display: flex;align-items: flex-end;}
+        main>section:nth-of-type(2)>figure>div{}
+        main>section:nth-of-type(2)>figure>div>.star{}
+
+        
+        
+        main>section:last-of-type{
+            position:relative;
+            width:100%;
+            height:500px;
+            background-color: white;
+            padding:0;
+            padding-top:50px;
+            flex-direction:column;
+            gap:30px 20px;
+        }
+        main>section:last-of-type>h2{width: 100%;position: absolute;top:0;}
+        main>section:last-of-type>figure{
+            width: calc(25% - 20px);
+            height:40%;
+            padding:0;
+        }
+        main>section:last-of-type>figure:nth-of-type(1),main>section:last-of-type>figure:nth-of-type(4){
+            height:100%
+        }
+        main>section:last-of-type>figure>img{
+            border-radius: 20px 20px 0 0;
+            height:80%
+        }
+        main>section:last-of-type>figure:nth-of-type(1)>img,main>section:last-of-type>figure:nth-of-type(4)>img{
+            height:90%;
+        }
+
+        footer{
+            display: flex;
+            background:var(--gray);
+            padding:40px;
+            margin-top:60px;
+        }
+        footer>ul{width:33%;}
+        footer>ul>li{}
+        footer>ul>li:nth-of-type(3){margin:10px 0;}
+        footer>ul>li>h5{font-size: 17px;}
+        
+
+        @media screen and (max-width:768px){
+            body>*:not(footer){margin:0;}
+            body>*:not(header){padding:20px;}
+
+            body>header{
+                flex-flow:wrap;
+            }
+            body>header>img{margin-left:40px;}
+            body>header>menu{
+                width:100%;
+                height:50px;
+            }
+            body>header>menu>li{
+                width:50%;
+            }
+            body>header>menu>li>a{
+                justify-content: center;
+            }
+            body>header>menu>li>a:hover{
+                border:none;
+                border-bottom:solid;
+            }
+
+
+
+            body>nav{}
+            body>nav>form{}
+            body>nav>form>fieldset{}
+            body>nav>form>fieldset:first-of-type{}
+            body>nav>form>fieldset:first-of-type>label{}
+            body>nav>form>fieldset:first-of-type>input{width:80%;}
+            body>nav>form>fieldset:first-of-type>label:after{display: flex;border-radius:20px;}
+            body>nav>form>fieldset:first-of-type>label>span{display:none;}
+            body>nav>form>fieldset:last-of-type{}
+
+
+            main:first-of-type{padding:0;}
+            main>section{padding:20px;}
+            main>section:first-of-type,main>section:nth-of-type(2){width:100%;border-radius:0;}
+            main>section:first-of-type{order:2;gap:30px;background-color: white;}
+            main>section:first-of-type>figure{width:100%;padding-bottom: 10px;}
+            main>section:first-of-type>figure>img{height:150px;}
+            main>section:nth-of-type(2){order:1;}
+            main>section:last-of-type{order:3;flex-direction:row;height:unset;padding:50px 20px 20px;}
+            main>section:last-of-type>figure{width:100%;height:150px !important;}
+            main>section:last-of-type>figure>img{height: 70% !important;}
+            main>section:last-of-type>figure>h3{height: 30%;display: flex;align-items: center;}
+
+            footer{flex-flow:wrap;}
+            footer>ul{width:100%;}
+        }
+
+        @media screen and (min-width:769px) and (max-width:992px){
+
+        }
+        
+
+        @media screen and (min-width:993px){
+
+        }
+        
+        
+        
+    </style> 
+    
+    
+</head>
+<body>
+    <header>
+        <!-- 
+            descripteur de largeur:
+            - x: pour "pixel density descriptor"
+            - w: pour "width descriptor"
+            https://www.alsacreations.com/article/lire/1621-responsive-images-srcset.html
+        -->
+        <!-- 
+            images adaptatives:
+            https://developer.mozilla.org/fr/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images 
+        -->
+<!--         
+        <img srcset="./assets/images/logo/Reservia.svg 799w,
+                     ./assets/images/logo/Reservia@3x.png 3x"
+             src="./assets/images/logo/Reservia@3x.png" alt="logo"
+        /> 
+        <picture>
+            <source media="(max-width: 799px)" srcset="./assets/images/logo/Reservia.svg">
+            <img src="./assets/images/logo/Reservia@3x.png" alt="logo">
+        </picture> 
+-->
+
+        <img srcset="./assets/images/logo/Reservia.svg 799w"
+             sizes="(max-width: 799px) 50vw,
+                    100vw"
+             src="./assets/images/logo/Reservia@3x.png" alt="logo"
+        />
+        <menu>
+            <li><a href="#">Hébergements</a></li>
+            <li><a href="#">Activités</a></li>
+        </menu>
+    </header>
+
+
+    
+    <nav>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+        <form action="#">
+            <fieldset>
+                <input id="search" placeholder="Marseille, France">
+                <label for="search">
+                    <span>Rechercher</span>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>Filtres</label>
+                <label for="eco"><input id="eco" type="radio"> Économique</label>
+                <label for="fam"><input id="fam" type="radio"> Familial</label>
+                <label for="rom"><input id="rom" type="radio"> Romantique</label>
+                <label for="ani"><input id="ani" type="radio"> Animaux autorisés</label>
+            </fieldset>
+        </form>
+        <p><span>Plus de 500 logements sont disponibles dans cette ville</span></p>
+    </nav>
+
+    
+    
+    <main>
+        <!-- section*2>h2{Hébergement à Marseille}+figure*3>img[src="./assets/images/hebergements/4_small/$.jpg"]+h3{Auberge la Cannebière}+p{Nuit à partir de ___€}+div.star>i*5.star -->
+        <section>
+            <h2>Hébergement à Marseille</h2>
+            <figure>
+                <img src="./assets/images/hebergements/4_small/1.jpg" alt="">
+                <h3>Auberge la Cannebière</h3>
+                <p>Nuit à partir de ___€</p>
+                <div><i></i><i></i><i></i><i></i><i class="void"></i></div>
+            </figure>
+            <figure>
+                <img src="./assets/images/hebergements/4_small/2.jpg" alt="">
+                <h3>Auberge la Cannebière</h3>
+                <p>Nuit à partir de ___€</p>
+                <div><i></i><i></i><i></i><i></i><i></i></div>
+            </figure>
+            <figure>
+                <img src="./assets/images/hebergements/4_small/3.jpg" alt="">
+                <h3>Auberge la Cannebière</h3>
+                <p>Nuit à partir de ___€</p>
+                <div><i></i><i></i><i></i><i></i><i class="void"></i></div>
+            </figure>
+            <figure>
+                <img src="./assets/images/hebergements/4_small/4.jpg" alt="">
+                <h3>Auberge la Cannebière</h3>
+                <p>Nuit à partir de ___€</p>
+                <div><i></i><i></i><i></i><i class="void"></i><i class="void"></i></div>
+            </figure>
+            <figure>
+                <img src="./assets/images/hebergements/4_small/5.jpg" alt="">
+                <h3>Auberge la Cannebière</h3>
+                <p>Nuit à partir de ___€</p>
+                <div><i></i><i></i><i></i><i></i><i class="void"></i></div>
+            </figure>
+            <figure>
+                <img src="./assets/images/hebergements/4_small/6.jpg" alt="">
+                <h3>Auberge la Cannebière</h3>
+                <p>Nuit à partir de ___€</p>
+                <div><i></i><i></i><i></i><i></i><i></i></div>
+            </figure>
+
+            <p>Afficher plus</p>
+        </section>
+
+
+
+        <section>
+            <h2>Les plus populaires <i></i></h2>
+            <figure>
+                <img src="./assets/images/hebergements/4_small/7.jpg" alt="">
+                <div>
+                    <h3>Auberge la Cannebière</h3>
+                    <p>Nuit à partir de ___€</p>
+                    <div><i></i><i></i><i></i><i></i><i></i></div>
+                </div>
+            </figure>
+            <figure>
+                <img src="./assets/images/hebergements/4_small/8.jpg" alt="">
+                <div>
+                    <h3>Auberge la Cannebière</h3>
+                    <p>Nuit à partir de ___€</p>
+                    <div><i></i><i></i><i></i><i></i><i class="void"></i></div>
+                </div>
+            </figure>
+            <figure>
+                <img src="./assets/images/hebergements/4_small/9.jpg" alt="">
+                <div>
+                    <h3>Auberge la Cannebière</h3>
+                    <p>Nuit à partir de ___€</p>
+                    <div><i></i><i></i><i></i><i></i><i class="void"></i></div>
+                </div>
+            </figure>
+        </section>
+
+
+        
+        <!-- section>h2{Activités à Marseille}+figure*6>img[src="./assets/images/activites/4_small/$.jpg"]+h3{Vieux Port} -->
+        <section>
+            <h2>Activités à Marseille</h2>
+            <figure>
+                <img src="./assets/images/activites/4_small/1.jpg" alt="">
+                <h3>Vieux Port</h3>
+            </figure>
+            <figure>
+                <img src="./assets/images/activites/4_small/2.jpg" alt="">
+                <h3>Vieux Port</h3>
+            </figure>
+            <figure>
+                <img src="./assets/images/activites/4_small/3.jpg" alt="">
+                <h3>Vieux Port</h3>
+            </figure>
+            <figure>
+                <img src="./assets/images/activites/4_small/4.jpg" alt="">
+                <h3>Vieux Port</h3>
+            </figure>
+            <figure>
+                <img src="./assets/images/activites/4_small/5.jpg" alt="">
+                <h3>Vieux Port</h3>
+            </figure>
+            <figure>
+                <img src="./assets/images/activites/4_small/6.jpg" alt="">
+                <h3>Vieux Port</h3>
+            </figure>
+        </section>
+        
+    </main>
+    <footer>
+        <!-- ul*3>(li>h5{À propos})+li*3{Fonctionnement du site} -->
+        <ul>
+            <li>
+                <h5>À propos</h5>
+            </li>
+            <li>Fonctionnement du site</li>
+            <li>Conditions générales de vente</li>
+            <li>Données et confidentialité</li>
+        </ul>
+        <ul>
+            <li>
+                <h5>Nos hébergements</h5>
+            </li>
+            <li>Charte qualité</li>
+            <li>Soumettre votre hôtel</li>
+        </ul>
+        <ul>
+            <li>
+                <h5>Assitance</h5>
+            </li>
+            <li>Centre d'aide</li>
+            <li>Nous contacter</li>
+        </ul>
+    </footer>
+    
+    
+</body>
+</html>

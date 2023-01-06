@@ -13,8 +13,8 @@ export default function Carousel(props){
       <div className="homeCarousel__inner carousel-inner">
         {props.data.map((item, i)=>{
           return (
-            <figure key={i} className={"homeCarousel__figure carousel-item " + (i==0?"active":"")}>
-              <img height="400" src={item.src} className={item.class} alt={item.alt}/>
+            <figure key={i} className={"homeCarousel__figure carousel-item " + (i===0?"active":"")}>
+              <img height="400" src={require('/'+item.src)} className={item.class} alt={item.alt}/>
               <figcaption>
                 <h3 className="text-uppercase">{item.h3}</h3>
                 <div>{item.fig}</div>

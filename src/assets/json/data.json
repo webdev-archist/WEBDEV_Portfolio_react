@@ -1,6 +1,17 @@
 {
+  "static":{
+    "header": {
+      "slogan": "Fullstack Web-developper Portfolio",
+      "menu": {
+        "contact": {"title": ""},
+        "about": {"title": ""},
+        "home": {"title": ""}
+      }
+    }
+  },
   "home":
     {
+      "slogan":"Welcome to Archist webdev's porfolio !",
       "diapo":
         [
           {"src": "img/home/carousel/fullstack.jpg", "class": "carousel-img1", "alt": "fullstack web developper", "h3": "A good web-developper can manage a lots of web techs", "fig": "What's a fullstack web developper is all about ?", "fig_": "I learned web technologies by myself but also trough academy (EMWEB, OpenClassrooms, ..)"},
@@ -25,21 +36,23 @@
           "h3": "Find me on social networks",
           "items": [
             {"href": "https://www.facebook.com/achi.agnissan", "title": "My own facebook account", "texte": "Facebook: Achi"},
-            {"href": "https://github.com/achicyr", "title": "My own github account", "texte": "Github: achicyr"}
+            {"href": "https://github.com/webdev-archist", "title": "My own github account", "texte": "Github: achicyr"},
+            {"href": "https://www.youtube.com/channel/UC_EV9aFhwEz0F1E68oFQQGA", "title": "My own github account", "texte": "Youtube: mentor archist"}
           ]
         },
         {
           "h3": "Find website I made",
           "items": [
             {"href": "https://2mains-marketing.com/", "title": "Made with wordpress", "texte": "Agence marketing"},
-            {"href": "http://archist.me/wp/2", "title": "Made with wordpress", "texte": "Blog sur le japon"},
-            {"href": "http://archist.me/ps/3", "title": "Made with prestashop", "texte": "Boutique d'articles japonais"}
+            {"href": "https://www.saintfrancoissaintpaul.fr/", "title": "Made with Wordpress", "texte": "Blog for a church in Aix-en-provence"},
+            {"href": "http://puissance-divine.ci/", "title": "Made by hand", "texte": "E-commerce of a Christian bookstore, and reservation of a place of prayer retreat"},
+            {"href": "https://www.calisson.com/fr/", "title": "Made with Prestashop", "texte": "E-commerce of luxury cakes and sweets"}
           ]
         },
         {
           "h3": "Find usefull links about me you may need",
           "items": [
-            {"texte": "Resume", "title": "My curriculum vitae", "href": "https://drive.google.com/open?id=1abUqoLJg0ts-_lUFoarZYLz9QeYUTzVH"}
+            {"texte": "Resume", "title": "My curriculum vitae", "href": "https://drive.google.com/file/d/15csQ7_bhSom2fStGOfJcNb-YN039YE4v/view?usp=sharing"}
           ]
         }
       ]
@@ -52,12 +65,19 @@
         {"item": "phone", "src": "phone.png", "alt": "call archist webdevelopper", "data": "0033641394588", "href": "tel:0033641394588"},
         {"item": "map", "src": "map.png", "alt": "localise where you can meet archist webdevelopper", "data": "", "href": ""},
         {"item": "rs", "src": "socialnetworks.png", "alt": "see archist webdevelopper's activities on the Internet", "data": {"Facebook": "https://www.facebook.com/achi.agnissan", "Github": "https://github.com/achicyr", "Twitter": "https://twitter.com/AchCyr"}}
+      ],
+      "form": [
+        {"_":true,"content":"Email address", "placeholder": "name@example.com", "type":"email"},
+        {"_":true,"content":"Name and Surname", "placeholder": "Name Surname"},
+        {"_":false,"content":"Phone number (with country code)", "placeholder": "+33 690 020 020", "type":"tel"},
+        {"_":true,"content":"Contact's purpose", "placeholder": "I want to meet you"},
+        {"_":true,"content":"Content of your message", "placeholder": "I want to meet you because of.....", "type":"textarea"}
       ]
     },
     "about":
     {
       "intro":  {"h2": "We only become what we are because of our childhood story.. Knowing someone is knowing his childhood", "src": "", "alt": "Archist webdev at 10year old", "p": "I was born in Ivory Coast, in west Africa. My father is an Ivoirian, and my mother is French, they are both christian engaged in everyday life.<br> I have 4 brothers et sisters, now only my sister and I live in France, all others live in Ivory Coast.<br> I did international (<a href=''>Mermoz</a>) and french (<a href=''>BlaisePascal</a>) school there.<br/>It was an happy childhood, and Ivory Coast miss me quite often even if poverty there is overwhelming, my family and old good friends still live there, so is the primary reason why..<br/>Finally, due to insecured event around 2005, I came prematurely to finish my high school in France in 1st grade of scientist stream in the <a href=''>Pierre d'Ailly</a> high school in Oise, Picardie. I really really liked this little place evenif it is a small cold country town :) I made very good friends I just could not imagine I would have. It certainly means that bad events can bright good opportunities ;) ", "button": "the short story of my childhood"},
-      "universitaire": {"id": 1,"src": "", "alt": "", "h3": "Second part of an instruct person's soul: the university path", "p": "My university path is not unidirectional, and is made of back and forth. The more essential is that I Finally found what I really want to do of my life, isn't it ?!", "items": [
+      "universitaire": {"id": 1,"src": "", "alt": "", "h3": "Second part of an instructed person's soul: the university path", "p": "My university path is not unidirectional, and is made of back and forth. The more essential is that I Finally found what I really want to do of my life, isn't it ?!", "items": [
         {"href": "http://unice.fr/iut/contenus-riches/plaquettes-dut/dut-r-t", "src":"r&t.png", "h4": "NETWORK & TELECOMMUNICATION", "p": "The R&T department trains neticians * who will be recruited in the IT field applied to the transmission of all types of data. They are specialists in administration, maintenance, security and evolution of computer networks.", "_": ["Bachelor’s Degree", "University Institute of Technology", "UFR Nice-Sophia-antipolis, Nice, France", "1 year"]}  ,
         {"href": "http://unice.fr/faculte-des-sciences/contenus-riches/documents-telechargeables/page-daccueil/licence-mass-2018/at_download/file", "src":"mass.png", "h4": "MATHEMATICS APPLIED to SOCIAL SCIENCES", "p": "The MASS course of the MIASHS License prepares students for entry into Schools of Statistics (ISUP), Grandes Ecoles (ENSAE, ENSAI, ...), in Engineering Schools, Business Schools, in the Magistrates of Financial Engineering. Holders of this course may in particular choose the following UNS Masters: 1)Economic Expertise; 2) Mathematical Engineering.", "_": ["Bachelor’s Degree", "Université Valrose", "UFR Nice-Sophia-antipolis, Nice, France"]},
         {"href": "http://lp-imash.unice.fr/index.php", "src":"imapp.png", "h4": "MULTIMEDIA COMPUTING APPLIED TO HUMAN SCIENCES", "p": "The IMApp Professional License aims to train technicians with dual skills. The initial competence is completed in one year by a topical technical competence, Multimedia Computing applied to the development of websites. The pedagogy is focused on the acquisition of website development techniques, immediately put into practice through realistic 'concrete' projects and the systematic professionalization of acquired skills.", "_": ["Bachelor’s Degree", "Université St JEan d'Angély", "UFR Nice-Sophia-antipolis, Nice, France"]},
@@ -68,7 +88,7 @@
         {"h4": "My first step at university", "p": "During a year-end project, I first knew IT development throught JavaJ2E by constructing a simple application recieving input datas and outputing a result. It was magic, so that led me leaving statistic studying to join web computing."}  ,
         {"h4": "My first year in web development at university", "p": "As every beginner in computing, I felt a large perspective of possibilities opening to me while the first year of computer learning. After university internship, I did not succeed to find a job. So I just continued learning by my own and constructing applications I would have like it exist."}  ,
         {"h4": "Then I completed my cursus with online courses", "p": "While finding a job was quite difficult in distant locations I reside and responsabilities I had with my family, I started online cursus that permit me finding easily traineeships and alternating training at <a href='https://www.esecad.com/formation-web'>emweb</a> and <a href='https://openclassrooms.com/'>openclassrooms</a>"}  ,
-        {"h4": "Now in openclassrooms,.. ", "p": "I am working in alternating training in a marketing compagny in Aix-en-Provence called <a href='https://mindfruits.biz'>Mindfruits</a> where I can easily learn google technologies, those I just wanted to learn several years ago. I am engage for 2 years, and will finish this path for gaining fullstack knowledge in september 2021.<br/>I could then either find a job through competence with high demand in every activity, or do and create my own actiivty."}  ,
+        {"h4": "Now in openclassrooms,.. ", "p": "I was working in alternating training in a marketing compagny in Aix-en-Provence called <a href='https://mindfruits.biz'>Mindfruits</a> where I could easily learn google technologies, those I just wanted to learn several years ago. I was engaged for 2 years.<br/>I could then either find a job through competence with high demand in every activity, or do and create my own activties."}  ,
         {"h4": "The future looks great, but still stay the futur, uncertain, hard to grab, and strewn with pitfalls", "p": "I would like to go to Japan, the holyland of technology. I also would like to construct my own activity. But an other thing that would be great would be to find a job that permit me continue to evolve in computing skills. So I am open mind to what futur have to offer !"}
       ]},
       "hobbies": {"id": 3,"src": "", "alt": "", "h3": "Appart from the compting, my hobbies are..", "items": [

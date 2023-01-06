@@ -1,7 +1,7 @@
 import React from "react";
 import {Gmaps, Marker, InfoWindow, Circle} from 'react-gmaps';
-
-const coords = {  lat: 43.534875,  lng: 5.462057  }
+ 
+const coords = {  lat: 35.65638380916043,  lng: 139.88384564298917  }
 const params = {v: '3.exp', key: 'AIzaSyBJcEaaYtL4Y9RmWSDg10UW3dFFpUY6KXc'}
 
 export default class Map extends React.Component {

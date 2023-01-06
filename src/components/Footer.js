@@ -1,9 +1,10 @@
 import React from 'react'
-import {
-  Link
-} from "react-router-dom";
+// import {
+//   Link
+// } from "react-router-dom";
 
 export default function Footer(props){
+  console.log(props);
   return(
     <footer className="container-fluid p-5">
       <div className="row">
@@ -12,13 +13,13 @@ export default function Footer(props){
             <h3>{item.h3}</h3>
             <ul>
               {item.items.map((items,i)=>
-                <li key={i}><a target="_blank" title={items.title} href={items.href}>{items.texte}</a></li>
+                <li key={i}><a target={"_blank"} title={items.title} href={items.href}>{items.texte}</a></li>
               )}
             </ul>
           </div>
         )}
       </div>
-      <div className="row text-center border-top">copyright @2020</div>
+      <div className="row text-center border-top">{props.lang==="jp"?"著作権@":"copyright @"}{(new Date).getFullYear()} archist-development</div>
     </footer>
   )
 }

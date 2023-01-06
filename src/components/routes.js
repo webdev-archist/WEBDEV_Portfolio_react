@@ -1,6 +1,6 @@
 import About from "./About"
 import Contact from "./Contact"
-import Skills from "./Skills"
+// import Skills from "./Skills"
 
 export default [
   { path: "/about", name: "About", Component: About, props: "about" },

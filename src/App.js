@@ -3,28 +3,35 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  useRouteMatch,
+  // Link
 } from "react-router-dom";
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Nav from "./components/Nav"
 import Home from "./components/Home"
 import About from "./components/About"
-import Skills from "./components/Skills"
+// import Skills from "./components/Skills"
+import js from "./assets/js/_.js";
 import Contact from "./components/Contact"
 import json from "./assets/json/data.json";
-import js from "./assets/js/_.js";
+import jsonJp from "./assets/json/dataJp.json";
 import routes from "./components/routes";
+import routesJp from "./components/routesJp";
 import css from "./assets/css/index.scss"
 
 
 export default function App(props) {
-  // console.log(props);
+  let  jp = (document.location.pathname==="/jp"||document.location.pathname==="/jp/")
+  , datas = {
+    routes: jp?routesJp:routes,
+    lang: jp?"jp":"en"
+  }
   return (
     <Router>
-      <Header routes={routes}/>
+      <Header {...datas} data={jp?jsonJp.static.header:json.static.header} />
 
-      <Nav />
+      <Nav {...datas} />
       {/* A <Switch> looks through its children <Route>s and
         renders the first one that matches the current URL. */}
         {/*
@@ -48,11 +55,15 @@ export default function App(props) {
         }
         {
           routes.map((item,i)=>{
-            item.path = window.location.hostname.indexOf("github") != -1 ? window.location.pathname.substring(0,window.location.pathname.lastIndexOf('/'))+item.path : item.path
+            item.path = window.location.hostname.indexOf("github") !== -1 ? window.location.pathname.substring(0,window.location.pathname.lastIndexOf('/'))+item.path : item.path
             return(
               <Route path={item.path} key={i}>
                 {
-                  item.name == "Contact" ? <Contact data={json.contact} /> : item.name == "About" ? <About data={json.about} /> : ""
+                  item.name === "Contact" 
+                    ? <Contact data={jp?jsonJp.contact:json.contact} /> 
+                    : item.name === "About" 
+                      ? <About data={jp?jsonJp.about:json.about} /> 
+                      : ""
                 }
               </Route>
             )
@@ -64,11 +75,11 @@ export default function App(props) {
           <Home data={json.home}/>
         </Route>
         <Route path="/">
-          <Home data={json.home}/>
+          <Home data={jp?jsonJp.home:json.home}/>
         </Route>
       </Switch>
 
-      <Footer data={json.footer}/>
+      <Footer {...datas} data={jp?jsonJp.footer:json.footer} />
     </Router>
 
   );

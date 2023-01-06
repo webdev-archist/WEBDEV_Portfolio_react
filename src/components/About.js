@@ -1,5 +1,5 @@
 import React from "react";
-import {  useLocation, useParams, useRouteMatch } from "react-router-dom";
+// import {  useLocation, useParams, useRouteMatch } from "react-router-dom";
 import Jumbotron from "./blocks/Jumbotron"
 import Accordion from "./blocks/Accordion"
 
